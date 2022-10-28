@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="12.345">
+    <testcase classname="US016 Class Work4" name="TC01 alerts and explicitly wait" time="12.116">
+        <failure message="element click intercepted: Element &lt;li class=&quot;btn btn-light &quot; id=&quot;item-1&quot;&gt;...&lt;/li&gt; is not clickable at point (176, 526). Other element would receive the click: &lt;div class=&quot;header-text&quot;&gt;...&lt;/div&gt;&#10;  (Session info: chrome=106.0.5249.119)&#10;Build info: version: '4.1.3', revision: '7b1ebf28ef'&#10;System info: host: 'LAPTOP-0HNNR7B4', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [ced203795ce7ebd3c1c91364388b164c, clickElement {id=cdd0f1cc-c5e4-4808-b572-14b2782133cf}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:59804}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59804/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (ced203795ce7ebd3c1c91364388b164c)] -&gt; xpath: (//*[@class='btn btn-light '])[11]]&#10;Session ID: ced203795ce7ebd3c1c91364388b164c" type="org.openqa.selenium.ElementClickInterceptedException">
+            <![CDATA[Given kullanici "demoUrl" anasayfasinda.....................................passed
+And kullanici 2 saniye bekler...............................................passed
+When kullanici Alerts buttonuna tiklar......................................failed
+And kullanici 2 saniye bekler...............................................skipped
+And kullanici On button click, alert will appear after bes seconds karsisindaki click me  butonuna basar.skipped
+And kullanici Allertin gorunur olmasini bekler..............................skipped
+And kullanici Allert uzerindeki yazinin This alert appeared after bes seconds oldugunu test eder.skipped
+And kullanici ok diyerek alerti kapatir.....................................skipped
+
+StackTrace:
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <li class="btn btn-light " id="item-1">...</li> is not clickable at point (176, 526). Other element would receive the click: <div class="header-text">...</div>
+  (Session info: chrome=106.0.5249.119)
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'LAPTOP-0HNNR7B4', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ced203795ce7ebd3c1c91364388b164c, clickElement {id=cdd0f1cc-c5e4-4808-b572-14b2782133cf}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:59804}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59804/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (ced203795ce7ebd3c1c91364388b164c)] -> xpath: (//*[@class='btn btn-light '])[11]]
+Session ID: ced203795ce7ebd3c1c91364388b164c
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy23.click(Unknown Source)
+	at stepDefinitions.DemoStepDefinition.kullaniciAlertsButtonunaTiklar(DemoStepDefinition.java:20)
+	at ✽.kullanici Alerts buttonuna tiklar(file:///C:/SeleniumBatch81/batch81Cucumber/src/test/resources/features/US016_ClassWork4.feature:7)
+]]>
+        </failure>
+    </testcase>
+</testsuite>
